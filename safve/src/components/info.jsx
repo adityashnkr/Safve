@@ -1,7 +1,6 @@
 import React , {Component} from 'react';
 import {  Card, Button, CardHeader, CardFooter, CardBody, CardTitle, CardText,Form, FormGroup, Label, Input, FormText } from 'reactstrap';
-import DatePicker from 'react-datepicker'
-
+import {db} from './firebase.js';
 class Info extends Component {
 	constructor(props) {
 		super(props)
@@ -10,7 +9,7 @@ class Info extends Component {
 			amount: '',
 			comments: '',
 			topic: 'groccery',
-            date: undefined,
+            date: '',
 		}
 	}
 
@@ -31,15 +30,31 @@ class Info extends Component {
 			topic: event.target.value
 		})
 	}
-    // handleDateChange = event => {
-	// 	this.setState({
-	// 		topic: event.target.value
-	// 	})
-	// }
+    handleDateChange = event => {
+		this.setState({
+			date: event.target.value
+		})
+		
+	}
 
 
 	handleSubmit = event => {
-		alert(`${this.state.amount} ${this.state.comments} ${this.state.topic}`)
+		
+		db.collection("UserData")
+.doc()
+.set({
+amount: this.state.amount,
+comments: this.state.comments,
+topic: this.state.topic,
+date: this.state.date,
+})
+.then(function () {
+
+})
+.catch(function (error) {
+alert(error);
+});
+		// alert(`${this.state.amount} ${this.state.comments} ${this.state.topic} ${this.state.date}`)
 		event.preventDefault()
 	}
 
@@ -72,8 +87,8 @@ class Info extends Component {
                 <FormGroup>
                     
                     {/* fix DATE */}
-
-
+					<Label>Date</Label>
+				<Input type='Date' onChange={this.handleDateChange} value={date}></Input>
                 {/* <DatePicker selected = {date} onChange={this.handleDateChange} />  */}
                 </FormGroup>
                 <FormGroup>
