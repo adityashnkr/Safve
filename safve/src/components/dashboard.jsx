@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { Component} from 'react';
+import Header from './header';
 
 class Dashboard {
     render() {
         return (
             <div>
-                Hussain is God
+                <Header />
             </div>
                 )
     }
