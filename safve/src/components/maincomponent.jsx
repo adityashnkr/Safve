@@ -1,7 +1,7 @@
 import React ,{Component} from 'react';
 import Home  from './home';
 import Dashboard from './dashboard';
-
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 class Main extends Component {
     render(){
@@ -17,8 +17,11 @@ class Main extends Component {
         }
         return(
             <div>
-                <DashBoard />
-                <HomePage></HomePage>
+                <Switch>
+                <Route path="/home" component = { HomePage } />
+                <Route exact path="/dash" component = { DashBoard } />
+                <Redirect to="/home" />
+                </Switch>
                 </div>
                 )
     }
