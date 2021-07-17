@@ -20,10 +20,13 @@ class Header extends Component {
         return(
             <div>
             <Navbar color="dark" dark expand="md">
-              <NavbarBrand className="mr-auto" href="/"><img src='assets\pixil-frame-0.png' height="30" width="30" alt='Safve' /></NavbarBrand>
+              <NavbarBrand className="mr-auto" href="/">Hello User 👋</NavbarBrand>
               {/* <NavbarToggler onClick={toggle} /> */}
               {/* <Collapse isOpen={isOpen} navbar> */}
                 <Nav navbar>
+                <NavItem>
+                    <NavLink href="/">1000<img src="assets\pixil-frame-0.png" height="20" width="20" alt='Safve' ></img></NavLink>
+                  </NavItem>
                   <NavItem>
                     <NavLink href="/">Discover</NavLink>
                   </NavItem>

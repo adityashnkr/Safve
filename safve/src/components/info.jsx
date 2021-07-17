@@ -61,9 +61,8 @@ alert(error);
 	render() {
 		const { amount, comments, topic ,date} = this.state
 		return (
-            <div>
-                <div className="col-12 col-md-5 m-1">
-                <Card color='secondary'>
+                <Card color='secondary' style={{width:"20rem",height:"28rem"}}>
+					<CardBody>
 			<Form onSubmit={this.handleSubmit}>
 				<FormGroup>
 					<Label>Amount</Label>
@@ -73,7 +72,6 @@ alert(error);
 						onChange={this.handleAmountChange}
 					/>
 				</FormGroup>
-
 				<FormGroup>
 					<Label>Topic</Label>
 					<Input type="select" value={topic} onChange={this.handleTopicChange}>
@@ -86,10 +84,8 @@ alert(error);
 				</FormGroup>
                 <FormGroup>
                     
-                    {/* fix DATE */}
 					<Label>Date</Label>
 				<Input type='Date' onChange={this.handleDateChange} value={date}></Input>
-                {/* <DatePicker selected = {date} onChange={this.handleDateChange} />  */}
                 </FormGroup>
                 <FormGroup>
 					<Label>Comments</Label>
@@ -100,9 +96,8 @@ alert(error);
 				</FormGroup>
 				<Button color="success" type="submit">Submit</Button>
 			</Form>
+			</CardBody>
             </Card>
-            </div>
-            </div>
 		)
 	}
 }
