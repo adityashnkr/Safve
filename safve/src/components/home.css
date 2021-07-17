@@ -1,0 +1,37 @@
+#homePage-wrapper {
+  padding: 20px;
+  overflow: hidden;
+}
+#NavBar {
+  display: flex;
+  justify-content: space-between;
+}
+#logo {
+  width: 50px;
+}
+#nav-left a {
+  margin-right: 20px;
+}
+.butt {
+  background-color: #00d09c;
+  border: none;
+  padding: 10px;
+  width: 110px;
+  border-radius: 100px;
+}
+#line {
+  margin-top: 100px;
+}
+#yo {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+#yo img {
+  max-width: 30%;
+  min-width: 200px;
+  padding-top: 30px;
+}
+#rand2 {
+  margin-left: 50%;
+}
