@@ -1,7 +1,7 @@
 import React, { Component} from 'react';
 import Header from './header';
 
-class Dashboard extends Component {
+class Dashboard {
     render() {
         return (
             <div>

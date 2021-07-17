@@ -1,6 +1,6 @@
 import React ,{Component} from 'react';
 import Home  from './home';
-import Dashboard from './dashboard';
+import Dashboard from './dashboard'
 
 
 class Main extends Component {
@@ -10,16 +10,16 @@ class Main extends Component {
                 <Home />
                     )
         }
-        const DashBoard = () => { 
+        const DashboardPage = () => { 
             return(
                 <Dashboard />
                 )
         }
         return(
             <div>
-                <DashBoard />
-                <HomePage></HomePage>
-                </div>
+                <DashboardPage />
+                {/* <HomePage></HomePage> */}
+            </div>
                 )
     }
 
