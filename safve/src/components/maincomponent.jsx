@@ -2,6 +2,7 @@ import React ,{Component} from 'react';
 import Home  from './home';
 import Dashboard from './dashboard';
 
+
 class Main extends Component {
     render(){
         const HomePage = () => {
@@ -9,13 +10,14 @@ class Main extends Component {
                 <Home />
                     )
         }
-        const Dashboard = () => { 
+        const DashBoard = () => { 
             return(
                 <Dashboard />
                 )
         }
         return(
             <div>
+                <DashBoard />
                 <HomePage></HomePage>
                 </div>
                 )
