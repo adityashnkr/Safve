@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from './header';
-import {  Card, Button, CardHeader, CardFooter, CardBody, CardTitle, CardText,Form, FormGroup, Label, Input, FormText,Container,Row,Col } from 'reactstrap';function Learn(){
+import Quiz from './quiz';
+import {  Card, Button, CardHeader, CardFooter, CardBody, CardTitle, CardText,Form, FormGroup, Label, Input, FormText,Container,Row,Col } from 'reactstrap';
+function Learn(){
     return(
         <React.Fragment>
             <Header />
@@ -16,7 +18,7 @@ import {  Card, Button, CardHeader, CardFooter, CardBody, CardTitle, CardText,Fo
                     <CardBody>
                         <CardTitle tag = "h5">Make your own coffee to save 💰</CardTitle>
                         <p class="card-text">Why spend 5$ on a coffee when you can make if for 20¢ ☕.</p>
-                        <a href="#" class="btn btn-primary">Read</a>
+                        <a href="/quiz" class="btn btn-primary">Read</a>
                     </CardBody>
                     </Card>
                     </Col>
