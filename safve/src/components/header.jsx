@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component,useState,useEffect } from 'react';
+import {db} from './firebase';
 import {
     Collapse,
     Navbar,
@@ -14,8 +15,16 @@ import {
     NavbarText,
     Button
   } from 'reactstrap';
-class Header extends Component {
-    render() {
+function Header() {
+  const [userCoins, setuserCoins] = useState([]);
+
+  useEffect(() => {
+    db.collection("UserCoins").where('user','==','TestUser').onSnapshot((snapshot) => {
+      setuserCoins(snapshot.docs.map((doc) => doc.data()));
+      
+    });
+  }, []);
+  const usercoin = userCoins[0].coins;
         return(
             <div>
             <Navbar color="dark" dark expand="md">
@@ -25,7 +34,7 @@ class Header extends Component {
               {/* <Collapse isOpen={isOpen} navbar> */}
                 <Nav navbar>
                 <NavItem>
-                    <NavLink href="/stonks">1000 <img src="assets\pixil-frame-0.png" height="20" width="20" alt='Safve' ></img></NavLink>
+                    <NavLink href="/stonks">{usercoin} <img src="assets\pixil-frame-0.png" height="20" width="20" alt='Safve' ></img></NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink href="/">Discover</NavLink>
@@ -43,7 +52,7 @@ class Header extends Component {
           </div>
           
                 )
-    }
+    
 }
 
 export default Header;

@@ -30,7 +30,6 @@ var amt;
     amt = amount;  
   });
 
- console.log(UserData2);
  const data01 = UserData2;
      return(
                 <Card color='secondary' style={{width:"50rem",height:"28rem"}}>
