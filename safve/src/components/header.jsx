@@ -25,7 +25,7 @@ class Header extends Component {
               {/* <Collapse isOpen={isOpen} navbar> */}
                 <Nav navbar>
                 <NavItem>
-                    <NavLink href="/">1000<img src="assets\pixil-frame-0.png" height="20" width="20" alt='Safve' ></img></NavLink>
+                    <NavLink href="/stonks">1000 <img src="assets\pixil-frame-0.png" height="20" width="20" alt='Safve' ></img></NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink href="/">Discover</NavLink>

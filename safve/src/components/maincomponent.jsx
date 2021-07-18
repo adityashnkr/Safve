@@ -3,6 +3,7 @@ import Home  from './home';
 import Dashboard from './dashboard';
 import Learn from './learn'
 import Quiz from './quiz'
+import Stonkoins from './stonkoin'
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 class Main extends Component {
@@ -25,6 +26,10 @@ class Main extends Component {
             return(
                 <Quiz />)
         }
+        const stonks = () => {
+            return(
+                <Stonkoins />)
+        }
         return(
             <div>
                 <Switch>
@@ -32,6 +37,7 @@ class Main extends Component {
                 <Route exact path="/dash" component = { DashBoard } />
                 <Route exact path="/learn" component = { LearnPage } />
                 <Route exact path="/quiz" component = { quizPage } />
+                <Route exact path="/stonks" component = { stonks } />
                 <Redirect to="/home" />
                 </Switch>
                 </div>
