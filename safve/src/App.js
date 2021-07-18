@@ -1,15 +1,16 @@
-// import './App.css';
+import './App.css';
 import Main from './components/maincomponent'
 import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      {/* <BrowserRouter> */}
       <Main />
-      </BrowserRouter>
+      {/* </BrowserRouter> */}
     </div>
   );
 }
 
 export default App;
+

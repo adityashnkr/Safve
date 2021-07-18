@@ -14,7 +14,6 @@ import {
     NavbarText,
     Button
   } from 'reactstrap';
-
 class Header extends Component {
     render() {
         return(
