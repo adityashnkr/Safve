@@ -1,8 +1,9 @@
+  
 import React from 'react';
 import Header from './header';
 import Quiz from './quiz';
 import {  Card, Button, CardHeader, CardFooter, CardBody, CardTitle, CardText,Form, FormGroup, Label, Input, FormText,Container,Row,Col } from 'reactstrap';
-function Learn(){
+function Home(){
     return(
         <React.Fragment>
             <Header />
@@ -14,7 +15,7 @@ function Learn(){
                 <Row>
                     <Col className='sm'>
                     <Card style={{width: "25rem;"}}>
-                    <img src="https://media.giphy.com/media/l3fPlHQOHUzYRufm7E/giphy.gif" class="card-img-top" alt="..." />
+                    <img src="assets\coffee.gif" class="card-img-top" alt="..." />
                     <CardBody>
                         <CardTitle tag = "h5">Make your own coffee to save 💰</CardTitle>
                         <p class="card-text">Why spend 5$ on a coffee when you can make if for 20¢ ☕.</p>
@@ -24,7 +25,7 @@ function Learn(){
                     </Col>
                     <Col className='sm'>
                     <Card style={{width: "25rem;"}}>
-                    <img src="https://media.giphy.com/media/2Ga8aj2mbUFK8/giphy.gif" class="card-img-top" alt="..." />
+                    <img src="assets\kevin.gif" class="card-img-top" alt="..." />
                     <CardBody>
                         <CardTitle tag = "h5">Start a side Hustle 💪</CardTitle>
                         <p class="card-text">Tips to start an effective side hustle to suppliment your income 💻.</p>
@@ -34,7 +35,7 @@ function Learn(){
                         </Col>
                         <Col className='sm'>
                         <Card style={{width: "25rem;"}}>
-                    <img src="https://media.giphy.com/media/lXC2gmHf2ypUs/giphy.gif" class="card-img-top" alt="..." />
+                    <img src="assets\travel.gif" class="card-img-top" alt="..." />
                     <CardBody>
                         <CardTitle tag = "h5">Travel the world fo 0$🌍</CardTitle>
                         <p class="card-text">Learn to travel for free using Credit Cards💳.</p>
@@ -47,7 +48,7 @@ function Learn(){
                 <Row>
                     <Col className='sm'>
                     <Card style={{width: "25rem;"}}>
-                    <img src="https://media.giphy.com/media/DxbAro4C39Qi5kJmPb/giphy.gif" class="card-img-top" alt="..." />
+                    <img src="assets\crypto.gif" class="card-img-top" alt="..." />
                     <CardBody>
                         <CardTitle tag = "h5">[AD] How to invest in Crypto 🪙</CardTitle>
                         <p class="card-text">[Sponsored]Learn to invest in crypto from experts at Coinbase.</p>
@@ -67,7 +68,7 @@ function Learn(){
                         </Col>
                         <Col className='sm'>
                         <Card style={{width: "25rem;"}}>
-                    <img src="https://media.giphy.com/media/QwyvEYx2qTK1GKF2Q2/giphy.gif" class="card-img-top" alt="..." />
+                    <img src="assets\vacation.gif" class="card-img-top" alt="..." />
                     <CardBody>
                         <CardTitle tag = "h5">[AD] Find the cheapest airlines and hotels in minutes ✈️.</CardTitle>
                         <p class="card-text">[Sponsored] Use Expedia to book your next travel 🧳.</p>
@@ -78,6 +79,7 @@ function Learn(){
                 </Row>
             </Container>
         </React.Fragment>
-            )
+    )
 }
-export default Learn;
+
+export default Home;

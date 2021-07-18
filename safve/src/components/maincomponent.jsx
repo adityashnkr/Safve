@@ -4,6 +4,8 @@ import Dashboard from './dashboard';
 import Learn from './learn'
 import Quiz from './quiz'
 import Stonkoins from './stonkoin'
+import Invest from './invest'
+import Redeem from './redeem'
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 class Main extends Component {
@@ -30,6 +32,14 @@ class Main extends Component {
             return(
                 <Stonkoins />)
         }
+        const investPage = () => {
+            return(
+                <Invest />)
+        }
+        const redeemPage = () => {
+            return(
+                <Redeem />)
+        }
         return(
             <div>
                 <Switch>
@@ -38,6 +48,8 @@ class Main extends Component {
                 <Route exact path="/learn" component = { LearnPage } />
                 <Route exact path="/quiz" component = { quizPage } />
                 <Route exact path="/stonks" component = { stonks } />
+                <Route exact path="/invest" component = { investPage } />
+                <Route exact path="/redeem" component = { redeemPage } />
                 <Redirect to="/home" />
                 </Switch>
                 </div>

@@ -23,10 +23,10 @@ function Home(){
               <div>
                 <Nav navbar>
                   <NavItem>
-                    <NavLink href="/" className="mr-auto">Invest</NavLink>
+                    <NavLink href="/invest" className="mr-auto">Invest</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="/" className="mr-auto">Help</NavLink>
+                    <NavLink href="/redeem" className="mr-auto">Reedeem</NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink href="/learn" className="mr-auto">Learn</NavLink>

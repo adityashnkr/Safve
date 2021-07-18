@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { db } from './firebase';
 import {  Card, Button, CardHeader, CardFooter, CardBody, CardTitle, CardText,Form, FormGroup, Label, Input, FormText,Container,Row,Col } from 'reactstrap';
 import './quiz.css'
 import Header from './header'
@@ -57,13 +56,6 @@ function Quiz() {
 			setCurrentQuestion(nextQuestion);
 		} else {
 			setShowScore(true);
-			var coins = score/questions.length+usercoin;
-			db.collection("UserCoins")
-.doc()
-.set({
-	user:'TestUser',
-coins: coins,
-})
 		}
 	};
 	return (
