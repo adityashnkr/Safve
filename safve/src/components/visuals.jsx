@@ -59,14 +59,15 @@ var amt;
                         <div className="col-sm-5">
                         <Card style={{width:"27rem",height:"25rem"}}  className="text-center">
                             <CardTitle tag="h5">Spendings</CardTitle>
-                            <div className="home_row">
+                            <div style={{overflow:'scroll',whiteSpace:'nowrap',overflowX:'hidden'}}>
         {UserData.map((product) => (
-          <div style={{}} >
+          <div style={{margin:'0px 0px 12px 0px',}} >
          
-             <h6 style={{margin:'0;'}}>{product.date}</h6>  
-              {product.topic}
-              {product.amount}
-            
+             <h5 style={{margin:'0;'}}>{product.date}</h5>  
+              <h6 style={{margin:'0;'}}>{product.topic}</h6>
+              ${product.amount}
+            <div style={{height:'1px',backgroundColor:'black'}}>
+          </div>
           </div>
         ))}
       </div>

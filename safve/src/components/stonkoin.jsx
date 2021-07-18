@@ -1,7 +1,16 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Header from './header';
+import {db} from './firebase.js';
 import {  Card, Button, CardHeader, CardFooter, CardBody, CardTitle, CardText,Form, FormGroup, Label, Input, FormText,Container,Row,Col } from 'reactstrap';
+
 function Stonkoins(){
+   
+    const [count, setcount] = useState([]);
+    db.collection("UserData").orderBy('topic').onSnapshot((snapshot) => {
+       var yus = snapshot.docs.map((doc) => doc.data());
+       
+        setcount (yus.length*0.7*0.0001);
+      });
     return(
         <>
         <Header />
@@ -21,6 +30,7 @@ function Stonkoins(){
             <h1 className="text-center text-primary text-capitalize my-5">We believe in giving back to our users 💖</h1>
             <h4 className="text-center  my-2 font-weight-light"> 30% of all our profits goes back to provide liquidity for Stonkoin.</h4>
             <h5 className="text-center my-3 font-weight-light"> 1 Stonkoin = Revenue X Number of Users / Secret Number 🤫</h5>
+            <h5 className="text-center my-3 font-weight-light">1 Stonkoin = ${count}</h5>
             </Col>
             </Row>
             <br /><hr/><br />
