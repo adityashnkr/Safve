@@ -1,18 +1,38 @@
-import React , { Component} from 'react';
+import React , { Component,useState,useEffect} from 'react';
+import {db} from './firebase.js';
 import {  Card, Button, CardHeader, CardFooter, CardBody, CardTitle, CardText,Form, FormGroup, Label, Input, FormText,Container,Row,Col } from 'reactstrap';
 import { PieChart, Pie, Legend, Tooltip, ResponsiveContainer } from 'recharts';
-const data01 = [
-    { name: 'Group A', value: 400 },
-    { name: 'Group B', value: 300 },
-    { name: 'Group C', value: 300 },
-    { name: 'Group D', value: 200 },
-    { name: 'Group E', value: 278 },
-    { name: 'Group F', value: 189 },
-  ];
 
-class Visuals extends Component {
-    render() {
-        return(
+
+function Visuals() {
+    const [UserData, setUserData] = useState([]);
+
+  useEffect(() => {
+    db.collection("UserData").orderBy('topic').onSnapshot((snapshot) => {
+      setUserData(snapshot.docs.map((doc) => doc.data()));
+    });
+  }, []);
+var UserData2 = [];
+var point;
+var amt;
+  UserData.forEach(element => {
+      var topic = element.topic;
+      var amount = Number(element.amount)
+     
+     if(point === topic){
+     
+        UserData2.pop();
+        amount = amount+amt;
+     }
+      
+    UserData2.push({value:amount,name:topic}) 
+    point = topic;   
+    amt = amount;  
+  });
+
+ console.log(UserData2);
+ const data01 = UserData2;
+     return(
                 <Card color='secondary' style={{width:"50rem",height:"28rem"}}>
                     <CardBody>
                         <div className="row">
@@ -39,6 +59,17 @@ class Visuals extends Component {
                         <div className="col-sm-5">
                         <Card style={{width:"27rem",height:"25rem"}}  className="text-center">
                             <CardTitle tag="h5">Spendings</CardTitle>
+                            <div className="home_row">
+        {UserData.map((product) => (
+          <div style={{}} >
+         
+             <h6 style={{margin:'0;'}}>{product.date}</h6>  
+              {product.topic}
+              {product.amount}
+            
+          </div>
+        ))}
+      </div>
                         </Card>
                         </div>
                         </div>
@@ -46,6 +77,6 @@ class Visuals extends Component {
                 </Card>
             )
     }
-}
+
 
 export default Visuals;

@@ -43,6 +43,7 @@ class Info extends Component {
 		db.collection("UserData")
 .doc()
 .set({
+	user:'TestUser',
 amount: this.state.amount,
 comments: this.state.comments,
 topic: this.state.topic,
