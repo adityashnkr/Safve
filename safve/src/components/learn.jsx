@@ -57,7 +57,7 @@ function Learn(){
                     </Col>
                     <Col className='sm'>
                     <Card style={{width: "25rem;"}}>
-                    <img src="https://media.giphy.com/media/bMycGOQLESDCEnLNUz/giphy.gif" class="card-img-top" alt="..." />
+                    <img src="assets\stonks.gif" class="card-img-top" alt="..." />
                     <CardBody>
                         <CardTitle tag = "h5">[AD] These stocks will make you RICH🤑</CardTitle>
                         <p class="card-text">[Sponsored]Invest in these stocks picked by experts at Webull 📈.</p>
