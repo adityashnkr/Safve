@@ -20,7 +20,7 @@ class Header extends Component {
             <div>
             <Navbar color="dark" dark expand="md">
               <div className="container">
-              <NavbarBrand className="mr-auto" href="/">Hello User 👋</NavbarBrand>
+              <NavbarBrand className="mr-auto" href="/dash">Hello User 👋</NavbarBrand>
               {/* <NavbarToggler onClick={toggle} /> */}
               {/* <Collapse isOpen={isOpen} navbar> */}
                 <Nav navbar>
@@ -28,7 +28,7 @@ class Header extends Component {
                     <NavLink href="/stonks">1000 <img src="assets\pixil-frame-0.png" height="20" width="20" alt='Safve' ></img></NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="/">Discover</NavLink>
+                    <NavLink href="/">Invest</NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink href="/">Help</NavLink>
