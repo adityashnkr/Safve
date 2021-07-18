@@ -19,6 +19,7 @@ class Header extends Component {
         return(
             <div>
             <Navbar color="dark" dark expand="md">
+              <div className="container">
               <NavbarBrand className="mr-auto" href="/">Hello User 👋</NavbarBrand>
               {/* <NavbarToggler onClick={toggle} /> */}
               {/* <Collapse isOpen={isOpen} navbar> */}
@@ -32,10 +33,15 @@ class Header extends Component {
                   <NavItem>
                     <NavLink href="/">Help</NavLink>
                   </NavItem>
+                  <NavItem>
+                    <NavLink href="/learn">Learn</NavLink>
+                  </NavItem>
                 </Nav>
               {/* </Collapse> */}
+              </div>
             </Navbar>
           </div>
+          
                 )
     }
 }

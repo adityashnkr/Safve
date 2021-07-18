@@ -7,8 +7,12 @@ class Dashboard extends Component {
     render() {
 
         return (
-            <div>
+            <React.Fragment>
                 <Header />
+                <h1 className="text-center text-primary text-capitalize my-5">Save more to Earn more 💸</h1>
+                <h4 className="text-center text-primary text-capitalize text-muted my-2 font-weight-light">Input spendings below</h4>
+                <br />
+                <br />
                 <Container>
                 <Row>
                     <Col sm="4">
@@ -21,7 +25,7 @@ class Dashboard extends Component {
                     </Col>
                 </Row>
                 </Container>
-            </div>
+            </React.Fragment>
                 )
     }
 
