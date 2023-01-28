@@ -1,32 +1,45 @@
-# Safve
+Safve 💰💵 - A Website That Rewards You To Save! 💪
+=============
 
-A website that rewards you to save
-Level Up Hackathon
+Safve is the website that rewards you for being a saving champion! 💰 No more struggling to save those coins, Safve is here to give you an extra push. 💰💰
 
-<h1>HomePage</h1>
+DEVPOST: https://devpost.com/software/safve
 
-<img src="images\Screenshot 2021-07-18 204630.png">
+How to earn Stonkoins 💰
+--------
 
-<h1>About Stonkoin</h1>
+Safve rewards you with Stonkoins for being a saving superhero, community MVP, and investing ninja. Here's what you need to do to earn Stonkoins:
 
-<h4>How can you earn Stonkoins</h4>
-<h4>Save more Earn More 💸</h4>
-<h4>Save more money that last week and get 0.001 Stonkoin for every 10$</h4>
-<h4>Interact with the community 🧑🏻‍🤝‍🧑🏿</h4>
-<h4>Use the Learn section to interact with the community and earn stonkoins by answering quizzes</h4>
-<h4>Invest with our Partner 🧑‍💻</h4>
-<h4>Get 0.5 Stonkoin for every 10$ invested with your Partner</h4>
+Save More, Earn More 💰
+--------
 
-<img src="images\Screenshot 2021-07-18 204855.png">
+Save more money than you did last week and get 0.001 Stonkoins for every $10 saved. Because who doesn't love more money?!
 
-<img src="images\Screenshot 2021-07-18 204910.png">
+Interact with the Community 🧑🏻‍🤝‍🧑🏿
+--------
 
-<h1>Dashboard</h1>
+Use the Learn section to answer quizzes and engage with other users to earn Stonkoins. Knowledge is power and money! 💰
 
-<img src="images\Screenshot 2021-07-18 204658.png">
+Invest with Our Partner 🧑‍💻
+--------
 
-<h1>Learn</h1>
+Get 0.5 Stonkoins for every $10 invested with our partner. Invest in your future, and your wallet will thank you. 💰
 
-<h4>Learn about personal finance and frugal living</h4>
+Features
+--------
 
-<img src="images\Screenshot 2021-07-18 204726.png">
+User-friendly dashboard to keep track of your Stonkoins 💻
+
+Learn section to educate yourself on personal finance and frugal living 📚
+
+Fun Fact 🤣
+--------
+
+Did you know that saving money can be just as fun as spending it? With Safve, you'll not only improve your financial situation, but you'll also have a blast doing it! 💰🎉
+
+Contributing 🤝
+--------
+
+Want to help make Safve even better? Head on over to the GitHub repository and check out the open issues. We welcome contributions of all types! Let's make the world a better place, one Stonkoin at a time! 💰
+
+Start earning Stonkoins today with Safve! 💵 Let's make saving fun! 💰
